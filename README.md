@@ -60,9 +60,10 @@ Within the subset_of_variables() function, the hyperparameters with the highest 
 2.3 Final model training and testing<br /> 
 We used the best performing hyperparameters and only the most important variables in the final model training.  The resulting model is saved and then tested with new data  from Nov 2021 - Apr 2022 that was not used in the training. We calculated the R-squared from the final model for each region - Xeric, Coastal Mountains and Interior Mountains respectively. 
 
-**3. Operationally**
+**3. Operationally**<br /> 
 The above steps are already coded in the script, operationally, you would need to pull the input training data [1.1.a] (you can update the box link whenever there are new training data) and run the Random Forest Model by inputting the number of iteration, number of runs, the month to run, example as follow:
 
+<pre /> 
 n_iter = 10<br /> 
 number_of_runs = 40<br /> 
 month_list = [1,2,3,4,5,6,7,8,9,10,11,12]<br /> 
