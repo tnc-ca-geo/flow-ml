@@ -65,18 +65,19 @@ We used the best performing hyperparameters and only the most important variable
 
 The above steps are already coded in the script, operationally, you would only need to pull the input training data [1.1.a] (you can update the box link whenever there are new training data) and run the Random Forest Model by inputting the number of iteration, number of runs, the month to run, example as follow:
 
-<pre /> 
-n_iter = 10<br /> 
-number_of_runs = 40<br /> 
-month_list = [1,2,3,4,5,6,7,8,9,10,11,12]<br /> 
+```
+n_iter = 10
+number_of_runs = 40 
+month_list = [1,2,3,4,5,6,7,8,9,10,11,12]
 
-for month in month_list:<br /> 
-  print("Running hyperparameter search for month {}".format(month))<br /> 
-  hyper_parameter_search(n_iter, month)<br /> 
-  print("Selecting variable subset for month {}".format(month))<br /> 
-  subset_of_variables(month, number_of_runs)<br /> 
-  print("Training final model for month {}".format(month))<br /> 
-  train_final_model(month)<br /> 
+for month in month_list:
+  print("Running hyperparameter search for month {}".format(month)) 
+  hyper_parameter_search(n_iter, month)
+  print("Selecting variable subset for month {}".format(month))
+  subset_of_variables(month, number_of_runs)
+  print("Training final model for month {}".format(month))
+  train_final_model(month)
+```
 
-
+Once you run the above code, the result output (hyperparameter, subset of important variables, model produced) are stored in: https://tnc.box.com/s/828o0fmtezpo3v3s3u2ljpq03yd8qyn6
 
