@@ -39,6 +39,7 @@ Hence, we recommend keeping training data separate from the testing data, and si
 1.4. We used label encoding on Column ['NewEco3'],  to identify the different regions(Xeric, Coastal Mountains and Interior Mountains) because previous research by the USGS indicated differing flow relationships based on geographic region.
 
 **2. Random Forest Modeling**
+
 2.1 Hyperparameter Tuning<br /> 
 Hyperparameter is a parameter whereby the value is used to control the learning process of machine learning, which in this case some of the main hyperparameter values are the n_estimators, max_depth, min_samples_leaf, max_features which controls the learning rate of our random forest machine learning model. When we make use of the RandomForestRegressor from the sclearn package (https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html), they have the hyperparameters set at certain default values, which we could change if we decided that there are better values that improves the learning rate and result of the model. The following are detailed descriptions of each hyperparameter.
 
@@ -60,8 +61,9 @@ Within the subset_of_variables() function, the hyperparameters with the highest 
 2.3 Final model training and testing<br /> 
 We used the best performing hyperparameters and only the most important variables in the final model training.  The resulting model is saved and then tested with new data  from Nov 2021 - Apr 2022 that was not used in the training. We calculated the R-squared from the final model for each region - Xeric, Coastal Mountains and Interior Mountains respectively. 
 
-**3. Operationally**<br /> 
-The above steps are already coded in the script, operationally, you would need to pull the input training data [1.1.a] (you can update the box link whenever there are new training data) and run the Random Forest Model by inputting the number of iteration, number of runs, the month to run, example as follow:
+**3. Operationally (Running the notebook)**<br /> 
+
+The above steps are already coded in the script, operationally, you would only need to pull the input training data [1.1.a] (you can update the box link whenever there are new training data) and run the Random Forest Model by inputting the number of iteration, number of runs, the month to run, example as follow:
 
 <pre /> 
 n_iter = 10<br /> 
