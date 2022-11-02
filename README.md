@@ -88,7 +88,37 @@ Once you run the above code, the result output (hyperparameter, subset of import
 
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-![R2](https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(Full%20Model%20vs.%20USGS%20Model)/image.png?raw=true"Title")
+![R2](https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(Full%20Model%20vs.%20USGS%20Model)/image.png)
 
 https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(Full%20Model%20vs.%20USGS%20Model).png
+
+*Table 1:  R2 from testing data on Nov 2021 - Apr 2022 new data (Full Model vs. Actual USGS Model)*
+
+As shown in Table 1, it contains the R2 values of our best predictive model for the natural flows versus the USGS model that we used as our benchmark. The R2 values represent the goodness-of-fit of the models in choosing the independent variables that produce an accurate predicted flow value. An R2 of value 0 represents a model that does not explain any of the variation in the response variable through its independent variables and the higher the R2 value increase represents a higher accuracy in prediction from the model. 
+
+We can observe for months in the rainy season (Nov - Mar), our full model generally predicts well with an R2 averaging around 0.79. However, as the season gets drier in California, our full model does not predict as well as the USGS model.
+
+Although we only showcase the most comparable results to USGS’s above, which is the full model, we attempted various other methods to increase our R2 for the model too. 
+Some other approaches that we took:
+
+- Full model with higher estimator : For this approach, we increased the number of estimators from the range of 250, 500, 800 to a range of 1000, 1500, 2000 which increases the number of trees when building the random forest.
+- Reduced feature model : We manually select a set of reduced features for each month respectively
+- Reduced feature model with higher estimator
+- Replicating the hyperparameters used by USGS (USGS replicated model table below)
+-- Estimators = 1000
+Min_samples_leaf = 1
+Max_features = “sqrt”
+Max_depth = 5 
+
+Out of all the approaches, the USGS replicated model is the second most comparable model.
+
+![alt text](https://github.com/[tnc-ca-geo]/[flow-ml]/blob/[main]/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(USGS%20replicated%20model)%20.png?raw=true)
+
+https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(USGS%20replicated%20model)%20.png
+
+*Table 2:  R2 values from testing data on Nov 2021 - Apr 2022 new data (USGS replicated model versus Actual USGS Model)*
+
+As shown in Table 2, although this is our second most comparable model, the USGS Replicated Average R2 did not perform as well as the Full model in Table 1. We tried using the same hyperparameters that tuned the Actual USGS model, but some of the model predictions produced negative correlations in our testing set.
+
+We suggest that there might be some issue with overfitting that caused the training results of the Replicated USGS model to be unexpectedly high, but when being tested with the new data, the model could not generalize well and hence the poor R2 performance.
 
