@@ -86,8 +86,6 @@ Once you run the above code, the result output (hyperparameter, subset of import
 
 ## Results
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
 ![Table 1:  R2 from testing data on Nov 2021 - Apr 2022 new data (Full Model vs. Actual USGS Model)](https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(Full%20Model%20vs.%20USGS%20Model).png)
 
 *Table 1:  R2 from testing data on Nov 2021 - Apr 2022 new data (Full Model vs. Actual USGS Model)*
