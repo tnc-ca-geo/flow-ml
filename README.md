@@ -88,9 +88,7 @@ Once you run the above code, the result output (hyperparameter, subset of import
 
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-![R2](https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(Full%20Model%20vs.%20USGS%20Model)/image.png)
-
-https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(Full%20Model%20vs.%20USGS%20Model).png
+![Table 1:  R2 from testing data on Nov 2021 - Apr 2022 new data (Full Model vs. Actual USGS Model)](https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(Full%20Model%20vs.%20USGS%20Model).png)
 
 *Table 1:  R2 from testing data on Nov 2021 - Apr 2022 new data (Full Model vs. Actual USGS Model)*
 
@@ -112,9 +110,8 @@ Max_depth = 5
 
 Out of all the approaches, the USGS replicated model is the second most comparable model.
 
-![alt text](https://github.com/[tnc-ca-geo]/[flow-ml]/blob/[main]/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(USGS%20replicated%20model)%20.png?raw=true)
+![Table 2:  R2 values from testing data on Nov 2021 - Apr 2022 new data (USGS replicated model versus Actual USGS Model)](https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(USGS%20replicated%20model)%20.png)
 
-https://github.com/tnc-ca-geo/flow-ml/blob/main/images/R2%20from%20testing%20on%20Nov%202021-%20Apr%202022%20new%20data%20(USGS%20replicated%20model)%20.png
 
 *Table 2:  R2 values from testing data on Nov 2021 - Apr 2022 new data (USGS replicated model versus Actual USGS Model)*
 
